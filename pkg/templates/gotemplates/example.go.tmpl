@@ -1,0 +1,6 @@
+name               : {{.name}}
+type               : {{ "postgres" }}
+instances          : {{ .instances }}
+database read      : {{.name}}-r
+database readonly  : {{.name}}-ro
+database write     : {{.name}}-rw

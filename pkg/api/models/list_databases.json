@@ -1,0 +1,22 @@
+[
+    {
+        "bootstrap": {
+            "initdb": {
+                "database": "app",
+                "encoding": "UTF8",
+                "localeCType": "C",
+                "localeCollate": "C",
+                "owner": "app"
+            }
+        },
+        "creationTimestamp": "2023-10-18T14:02:52Z",
+        "instances": 1,
+        "name": "prod-shopping-db",
+        "namespace": "demo-namespace-anduin",
+        "primaryUpdateStrategy": "unsupervised",
+        "storage": {
+            "resizeInUseVolumes": true,
+            "size": "50Gi"
+        }
+    }
+]

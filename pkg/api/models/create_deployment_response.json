@@ -1,0 +1,34 @@
+{
+    "containers": [
+        {
+            "env": [
+                {
+                    "name": "dummyapi_token",
+                    "value": "1232132"
+                }
+            ],
+            "image": "nginx:1.14.2",
+            "imagePullPolicy": "IfNotPresent",
+            "name": "nginx",
+            "ports": [
+                {
+                    "containerPort": 80,
+                    "protocol": "TCP"
+                }
+            ],
+            "resources": {
+                "limits": {
+                    "cpu": "500m",
+                    "memory": "500M"
+                },
+                "requests": {
+                    "cpu": "500m",
+                    "memory": "500M"
+                }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File"
+        }
+    ],
+    "name": "sample-ingress-demo"
+}

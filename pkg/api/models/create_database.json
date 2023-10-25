@@ -1,0 +1,61 @@
+{
+    "bootstrap": {
+        "initdb": {
+            "database": "app",
+            "encoding": "UTF8",
+            "localeCType": "C",
+            "localeCollate": "C",
+            "owner": "app"
+        }
+    },
+    "creationTimestamp": "2023-10-24T20:07:02Z",
+    "instances": 1,
+    "name": "prod-shopping-db-2",
+    "namespace": "demo-namespace-anduin",
+    "primaryUpdateStrategy": "unsupervised",
+    "services": [
+        {
+            "creationTimestamp": "2023-10-24T20:07:03Z",
+            "name": "prod-shopping-db-2-r",
+            "namespace": "demo-namespace-anduin",
+            "ports": [
+                {
+                    "name": "postgres",
+                    "port": 5432,
+                    "protocol": "TCP",
+                    "targetPort": 5432
+                }
+            ]
+        },
+        {
+            "creationTimestamp": "2023-10-24T20:07:03Z",
+            "name": "prod-shopping-db-2-ro",
+            "namespace": "demo-namespace-anduin",
+            "ports": [
+                {
+                    "name": "postgres",
+                    "port": 5432,
+                    "protocol": "TCP",
+                    "targetPort": 5432
+                }
+            ]
+        },
+        {
+            "creationTimestamp": "2023-10-24T20:07:03Z",
+            "name": "prod-shopping-db-2-rw",
+            "namespace": "demo-namespace-anduin",
+            "ports": [
+                {
+                    "name": "postgres",
+                    "port": 5432,
+                    "protocol": "TCP",
+                    "targetPort": 5432
+                }
+            ]
+        }
+    ],
+    "storage": {
+        "resizeInUseVolumes": true,
+        "size": "50Gi"
+    }
+}
